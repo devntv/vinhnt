@@ -184,10 +184,9 @@ if (new URLSearchParams(window.location.search).get("clear")) {
       let s = 100 + i * 150;
       let cubeM = new t.Mesh(
         new t.BoxGeometry(s, s, s),
-        new t.MeshBasicMaterial({ color: c, wireframe: true, linewidth: 5 })
+        new t.MeshBasicMaterial({ color: c, wireframe: true, linewidth: 15 })
       );
-      cubeM.material.linewidth = 15;
-      cubeM.scale.set(2, 2, 2);
+
       cubeM.position.x = -win.shape.x + win.shape.w * 0.5;
       cubeM.position.y = -win.shape.y + win.shape.h * 0.5;
 
